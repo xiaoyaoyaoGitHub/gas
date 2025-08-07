@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mp-storage": "^1.0.3",
+    "vuex-persistedstate": "^4.1.0"
+  }
+}
