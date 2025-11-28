@@ -54,7 +54,7 @@
 				couponList: [],
 				tabList: ['优惠加油'],
 				curNow: 0,
-				showGas: false,
+				showGas: true,
 			};
 		},
 		created() {

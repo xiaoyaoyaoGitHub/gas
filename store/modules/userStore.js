@@ -134,6 +134,8 @@ const actions = {
 				channel: state.scanHomeChannel,
 				phoneCode: payload.detail.code,
 			}
+			// console.log("注册参数",JSON.stringify(reqWxData))
+			// return
 			try {
 				let res = await reqRegisterWx(reqWxData)
 				// 先更新用户id，避免注册后立即下单，导致无感授权未成功，id未更新

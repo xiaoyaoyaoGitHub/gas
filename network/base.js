@@ -1,8 +1,9 @@
 let baseURL = '';
 
-// baseURL = 'https://test.cdbitdeer.com'; // 测试环境
-baseURL = 'https://wxmini.ouoils.com/'; // 正式环境
-// baseURL = '/baseUrlTest'; // 跨域
+baseURL = 'https://testmini.ouoils.com:82/stage-api'; // 测试环境
+// baseURL = 'https://4b978c80.r31.cpolar.top';
+// baseURL = 'https://wxmini.ouoils.com/'; // 正式环境
+// baseURL = 'http://60.205.245.184:82/stage-api'; // 跨域
 
 import store from '@/store' // 假设store.js在src/store.js路径下
 export const myRequest = (options) => {
@@ -22,6 +23,8 @@ export const myRequest = (options) => {
 			cipher: 200,
 			noAes: 1,
 		}
+		// console.log(JSON.stringify(formattedData))
+		// debugger
 		uni.request({
 			url: baseURL + options.url, //接口地址：前缀+方法中传入的地址
 			method: options.method || 'POST', //请求方法：传入的方法或者默认是“POST”

@@ -17,7 +17,7 @@
 			} else if (process.env.UNI_PLATFORM === 'mp-alipay') {
 				// 支付宝小程序
 				this.$store.commit('userStore/setAppGroupId', 'DDP')
-				this.$store.commit('userStore/setAppId', '2021004158688710')
+				this.$store.commit('userStore/setAppId', '2021006109676006')
 				// 支付宝扫码进入小程序，只能在app.vue获取二维码数据。
 				if (options.query) {
 					const q = decodeURIComponent(options.query.qrCode) // 获取到二维码原始链接内容
